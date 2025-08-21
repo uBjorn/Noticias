@@ -72,7 +72,86 @@ header nav ul{
 /* Vamos deixa os artigos bunitin agr ;) */
 .articles{
     display: flex;
+    justify-content: center;
     padding: 40px 120px;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+.article-card{
+    background-color: #f4f5f7; /*cor do fundo da noticia */
+    color: #0a111e; /*cor do texto da noticia*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+}
+.article-heard{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.article-title{
+    font-weight: bolder;
+}
+.article-content{
+    line-height: 1.4;
+}
+.likebuton{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px){
+    /*todos os estilos contidos aqui só vão funcionar em telas até 768px */
+    body {
+        background-color: aquamarine;
+    }
+    .article-heard{
+        font-size: 0.8em;
+    }
+    header, .article{
+        padding: 40px;
+    }
+}
+
+/*Noticias*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #a0aec0;
+}
+article{
+    background-color: #e2e8f0;
+    padding: 24px;
+     border-radius: 20px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+     color: #0a111e;
+}
+article p{
+    color: #0a111e;
+    line-height: 1.5;
+    text-indent: 24px;
+}
+article h1{
+    color: #0a111e;
+    font-size: 2em;
+    font-weight: 900;
+}
+.news-highlight {
+    font-size: 1.5em; /*aumenta a fonte 1.5x do que o pai*/
+    text-align: center; /* centraliza o texto */
+    font-style: oblique; /*deixa o texto em italico*/
+}
+img{
+    width: 100%;
+    padding: 16px;
 }
